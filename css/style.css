@@ -81,10 +81,35 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.main-wrapper .nav-background .mobile-logo{
+    color: var(--light);
+}
+.main-wrapper .nav-background .mobile-nav .cart a{
+    color: var(--light);
+}
+
+.main-wrapper .nav-background .mobile-nav .nav-top a{
+    color: var(--light);
+    margin-left: 40px;
+}
+.main-wrapper .nav-background .mobile-nav .contact i{
+    color: var(--light);
+    margin-right: 10px;
+}
+.main-wrapper .nav-background .mobile-nav .time i{
+    color: var(--light);
+    margin-right: 10px;
+}
+.main-wrapper .nav-background .mobile-nav .contact .contact-1{
+    color: var(--light);
+}
+.main-wrapper .nav-background .mobile-nav .time .contact-1{
+    color: var(--light);
+}
 .nav-background{
     width: 100%;
     height: 100%;
-    background: var(--light);
+    background: var(--footer);
     position: absolute;
     top: 0;
     left: 0;
@@ -175,15 +200,15 @@ body{
     transition: all 0.3s ease;
     border: 1px solid transparent;
 }
-.btn-primary{
-    background: var(--danger);
+/* .btn-primary{
+    background: var(--);
     color: var(--heaven);
 }
 .btn-primary:hover{
     background: var(--heaven);
     color: var(--primary);
     border: 1px solid var(--primary);
-}
+} */
 .btn-secondary{
     background: var(--secondary);
     color: var(--heaven);
@@ -441,6 +466,9 @@ section.about-meal img{
 .about-meal h1{
     color:var(--footer);
 }
+.about-meal h1 span{
+    color:var(--danger);
+}
 .about-meal-wrap{
     margin-top: -30px;
 }
@@ -456,6 +484,14 @@ section.about-meal p{
     margin-bottom: 4rem;
 }
 
+
+/* ---services------ */
+.our-services .container .card-wrapper{
+    margin-top: -0px;
+}
+.our-services h1{
+    color: var(--footer);
+}
 section.our-services{
     background: var(--light);
 }
@@ -494,11 +530,14 @@ section.our-services .service-card p{
 /* big deal start */
 
 section.big-deal {
-    background: linear-gradient(rgba(35,43,56,0.9),rgba(35,43,56,0.9)),url(../images/food-table.jpg);
+    background: linear-gradient(rgba(35,43,56,0.6),rgba(35,43,56,0.6)),url(../images/pic-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
+}
+section.big-deal h1 span{
+    color:var(--danger);
 }
 
 section.big-deal .timer{
@@ -510,7 +549,7 @@ section.big-deal .timer{
 }
 section.big-deal .timer div{
     margin-right: 2rem;
-    background: var(--primary);
+    background: var(--danger);
     width: 150px;
     height: 150px;
     border-radius: 4px;
@@ -535,10 +574,17 @@ section.big-deal .timer div span:last-child{
 
 /* ------latest news------  */
 
+.latest-news .container .article-wrapper{
+    margin-top: -30px;
+}
+
 section.latest-news{
     background: var(--light);
     position: relative;
     z-index: 0;
+}
+.latest-news .container h1{
+    color: var(--footer);
 }
 section.latest-news .article-wrapper{
     display: flex;
@@ -554,6 +600,8 @@ section.latest-news .article-wrapper{
 }
 .latest-news .article-wrapper .card .card-content{
     padding: 2rem;
+    background: var(--footer);
+    color: var(--light);
 }
 .latest-news .article-wrapper .card .card-content .post-meta{
     margin-bottom: 1rem;
@@ -575,10 +623,10 @@ section.latest-news .article-wrapper{
 
 /* ---subscribe start ----*/
 section.subscribe{
-    background: var(--primary);
+    background: var(--footer);
 }
 section.subscribe .container > div:first-child img{
-    width: 90%;
+    width: 60%;
 }
 section.subscribe .container div:first-child {
     flex: 1;
@@ -590,12 +638,14 @@ section.subscribe h1{
     font-family: "Raleway-bold";
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    color: var(--light);
 }
 section.subscribe p{
     font-family: "Raleway-medium";
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
+    color: var(--light);
 }
 section.subscribe .input-wrap{
     background: var(--heaven);
@@ -616,7 +666,7 @@ section.subscribe .input-wrap input:focus{
 section.subscribe .input-wrap button{
    padding: 0.8rem 2rem;
    border: none;
-   background: var(--primary);
+   background: var(--footer);
    color: var(--pure);
    border-radius: 4px;
    font-size: 1rem;
@@ -625,7 +675,7 @@ section.subscribe .input-wrap button{
    outline: none;
 }
 section.subscribe .input-wrap button:hover{
-    background: var(--secondary);
+    background: var(--danger);
 }
 
 .nav-background .mobile-logo{
@@ -689,8 +739,12 @@ section.subscribe .input-wrap button:hover{
         margin-top: -4rem;
     }
     header.hero .hero-image{
-        right: -15px;
+        right: 185px;
         top: 90px;  
+    }
+    header.hero .hero-image img{
+        height: 260px;
+        width: 220px;
     }
     .top-products .slider-btn{
         display: none!important;
@@ -701,6 +755,9 @@ section.subscribe .input-wrap button:hover{
     .latest-news .article-wrapper .card{
        margin-right: 0;
        margin-bottom: 4rem;
+    }
+    .about-meal .container .about-meal-wrap .about-img{
+        margin-top: 40px;
     }
 }
 
@@ -719,6 +776,9 @@ section.subscribe .input-wrap button:hover{
     }
     section.our-services .card-wrapper .service-card{
         margin-bottom: 6rem;
+    }
+    .subscribe .container{
+        flex-direction: column;
     }
 
 }
