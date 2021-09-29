@@ -168,7 +168,7 @@ body{
 }
 .btn{
     padding: 0.75rem 0.75rem;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     line-height: 0.8;
     font-size: 1.2rem;
     cursor: pointer;
@@ -176,7 +176,7 @@ body{
     border: 1px solid transparent;
 }
 .btn-primary{
-    background: var(--primary);
+    background: var(--danger);
     color: var(--heaven);
 }
 .btn-primary:hover{
@@ -189,12 +189,12 @@ body{
     color: var(--heaven);
 }
 .btn-secondary:hover{
-    background: var(--heaven);
+    background: var(--light);
     color: var(--secondary);
     border: 1px solid var(--secondary);
 }
 /* EXTRA CLASS END */
-.top{
+/* .top{
     padding: 1.5rem 0;
 }
 .top .contact h5, .top .time h5{
@@ -210,6 +210,9 @@ body{
 }
 .top .contact img, .top .time img{
     margin-right: 1rem;
+} */
+.navbar .container{
+    position: absolute;
 }
 .navbar a{
     text-decoration: none;
@@ -220,12 +223,12 @@ body{
     transition: all .3s ease;
 }
 .navbar a.active{
-    background: var(--primary);
-    color: var(--pure);
+    background: var(--light);
+    color: var(--footer);
 }
 .navbar a:hover{
-    background: var(--primary);
-    color: var(--pure);
+    background: var(--light);
+    color: var(--footer);
 }
 .magic-shadow{
     position: relative;
@@ -261,8 +264,8 @@ body{
 }
 .hero{
     height: 600px;
-    background-image: url(../images/hero.png);
-    background-position: 0% 0%;
+    background-image: url(../images/pic-3.jpg);
+    background-position: 60% 10%;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -284,7 +287,7 @@ body{
     margin-bottom: 0.75rem;
 }
 .hero h1 span{
-    color: var(--primary);
+    color: var(--danger);
 }
 .hero p{
     font-family: "Raleway-medium";
@@ -297,8 +300,12 @@ body{
 }
 .hero .hero-image{
     position: absolute;
-    top: -40px;
-    right: 40px;
+    top: -95px;
+    right: 170px;
+}
+.hero .hero-image img{
+   height: 440px;
+   width: 350px;
 }
 
 
@@ -307,15 +314,16 @@ section{
     padding: 4rem 0;
 }
 section.top-products{
-    background: var(--light);
+    background: var(--footer);
 }
 .section-heading{
     font-family: "Raleway-bold";
     text-align: center;
     position: relative;
     margin-bottom: 6rem;
+   color:  var(--light);
 }
-.section-heading::after{
+/* .section-heading::after{
     content: '';
     display: block;
     width: 100%;
@@ -325,11 +333,12 @@ section.top-products{
     background-position: center;
     position: absolute;
     bottom: -40px;
-}
+} */
 section.top-products .food-slider .food-card{
     background: var(--heaven);
     padding: 1.5rem;
     border-radius: 4px;
+    background: var(--light) ;
 }
 section.top-products .food-slider .food-card .product-image img{
     width: 80%;
@@ -337,6 +346,9 @@ section.top-products .food-slider .food-card .product-image img{
     object-fit: contain;
     padding-bottom: 1rem;
 }
+/* section.top-products .food-slider .food-card .product-image{
+    background: var(--footer);
+} */
 hr{
     border: 1px solid var(--light);
     opacity: 0.8;
@@ -355,14 +367,14 @@ section.top-products .food-slider .food-card .stars img{
 }
 section.top-products .food-slider .food-card  .price{
     font-family: "raleway-medium";
-    color: var(--danger);
+    color: var(--footer);
     margin-bottom: 1rem;
 }
 section.top-products .food-slider .food-card button{
     font-family: "raleway-medium";
     color: var(--secondary);
     background: var(--heaven);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--footer);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -372,11 +384,11 @@ section.top-products .food-slider .food-card button{
     transition: all .3s ease;
 }
 section.top-products .food-slider .food-card button:hover{
-    background: var(--primary);
+    background: var(--footer);
     color: var(--heaven);
 }
 .food-slider .food-card button img{
-    background: var(--primary);
+    background: var(--footer);
     padding: 0.50rem;
     height: 32px;
     margin-right: 1.2rem;
@@ -391,7 +403,7 @@ section.top-products .food-slider .food-card button:hover{
     width: 30px;
     height: 30px;
     border: none;
-    background: var(--primary);
+    background: var(--footer);
     border-radius: 4px;
     cursor: pointer;
     outline: none;
@@ -410,6 +422,7 @@ section.top-products .food-slider .food-card button:hover{
 }
 .top-products .slider{
     position: relative;
+    margin-top: -30px;
 }
 .top-products .btn-wrapper{
     margin-top: 2rem;
